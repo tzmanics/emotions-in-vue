@@ -1,59 +1,44 @@
 <template>
   <div id="app">
-    <header>
-      <span>Vue.js PWA</span>
-    </header>
-    <main>
-      <img src="./assets/logo.png" alt="Vue.js PWA">
-      <hello></hello>
-    </main>
+    <h1> EIV </h1>
+    <h4> emotions in view </h4>
+    <emotion-input></emotion-input>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import EmotionInput from './components/EmotionInput'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    EmotionInput
   }
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,700i');
 body {
+  background-image: url('https://bit.ly/2qcNnVs');
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 1em;
+}
+
+h1 {
+  font-weight: 700; 
+  font-size: 2.8em;
+  letter-spacing: 12px;
   margin: 0;
 }
 
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+h2, h4 {
+  font-weight: 300;
 }
 
-main {
-  text-align: center;
-  margin-top: 40px;
-}
-
-header {
-  margin: 0;
-  height: 56px;
-  padding: 0 16px 0 24px;
-  background-color: #35495E;
-  color: #ffffff;
-}
-
-header span {
-  display: block;
-  position: relative;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: .02em;
-  font-weight: 400;
-  box-sizing: border-box;
-  padding-top: 16px;
+h4 {
+  letter-spacing: -1px;
+  margin-top: 0;
 }
 </style>

@@ -52,16 +52,16 @@ export default {
     addEmotion () {
       switch (this.emotionSelected) {
         case '😃':
-          this.happyFeels = this.happyFeels + 1
+          this.happyFeels++
           break
         case '😢':
-          this.sadFeels = this.sadFeels + 1
+          this.sadFeels++
           break
         case '🤣':
-          this.funnyFeels = this.funnyFeels + 1
+          this.funnyFeels++
           break
         case '😡':
-          this.angryFeels = this.angryFeels + 1
+          this.angryFeels++
           break
         default:
           console.log('No feels felt 😶')
